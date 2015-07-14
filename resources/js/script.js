@@ -73,4 +73,21 @@ $(document).ready(function() {
     }
   });
 
+  // Maps
+  var map = new GMaps({
+    div: 'map',
+    lat: 43.647452,
+    lng: -79.280000,
+    zoom: 12
+  });
+
+  map.addMarker({
+    lat: 43.647452,
+    lng: -79.395375,
+    title: 'Toronto, Canada',
+    infoWindow: {
+      content: '<p>Our Toronto headquarters</p>'
+    }
+  });
+
 });
